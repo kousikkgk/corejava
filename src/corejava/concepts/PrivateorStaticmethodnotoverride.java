@@ -12,7 +12,9 @@ class PrivateAndStaticMethodClass{
 public class PrivateorStaticmethodnotoverride extends PrivateAndStaticMethodClass  {
 
 	public static void main(String[] args) {
-		
+		PrivateAndStaticMethodClass psmc1=new PrivateAndStaticMethodClass();
+		psmc1.method2();//static method call using object
+		PrivateAndStaticMethodClass.method2();//static method call using class 
 	}
 	private void Method1() {
 		
